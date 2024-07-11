@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="calculator.css">
+<body>
+  <div class="cal">
+    <div class="cal-screen" id="cal-screen">0</div>
+    <div class="cal-keys">
+      <button type="button" onclick="inputDigit('7')">7</button>
+      <button type="button" onclick="inputDigit('8')">8</button>
+      <button type="button" onclick="inputDigit('9')">9</button>
+      <button type="button" onclick="getSquareRoot()">&#8730;</button>
+      <button type="button" onclick="inputDigit('4')">4</button>
+      <button type="button" onclick="inputDigit('5')">5</button>
+      <button type="button" onclick="inputDigit('6')">6</button>
+      <button type="button" class="operator" onclick="handleOperator('/')">&divide;</button>
+      <button type="button" onclick="inputDigit('1')">1</button>
+      <button type="button" onclick="inputDigit('2')">2</button>
+      <button type="button" onclick="inputDigit('3')">3</button>
+      <button type="button" class="operator" onclick="handleOperator('*')">&times;</button>
+      <button type="button" onclick="inputDigit('0')">0</button>
+      <button type="button" onclick="inputDecial()">.</button>
+      <button type="button" onclick="toogleSign()">+/-</button>
+      <button type="button" class="operator" onclick="handleOperator('-')">-</button>
+      <button type="button" class="all-clear" onclick="allClear()">AC</button>
+      <button type="button" class="clear-entry" onclick="clearEntry()">CE</button>
+      <button type="button" class="operator" onclick="handleOperator('=')">=</button>
+      <button type="button" class="operator" onclick="handleOperator('+')">+</button>
+      <p>❤️ Made By Aksh Raj</p>
+    </div>
+  </div>
+</body>
+<script src="calculator.js"></script>
+</html>

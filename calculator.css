@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.cal {
+  display: flex;
+  flex-wrap:  wrap;
+  width: 340px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px #00000040;
+  background-color: #161616;
+}
+
+.cal-screen {
+  width: 100%;
+  overflow: hidden;
+  font-family: "Kaushan Script", cursive;
+  background-color: #454e57;
+  border-radius: 15px;
+  font-size: 70px;
+  text-align: right;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.cal-keys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 5px;
+  row-gap: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.cal-keys button {
+  width: 70px;
+  height: 60px;
+  font-size: 24px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000040;
+  font-family: "Merienda", cursive;
+  border: none;
+  background-color: #050505;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.operator {
+  background-color: #454e57 !important;
+}
+
+.all-clear {
+  background-color: #bf2727 !important;
+}
+
+.clear-entry {
+  background-color: #d0751a !important;
+}
+
+button:active {
+  background-color: #454e57;
+}
+
+.operator:active, .all-clear:active, .clear-entry:active {
+  background-color: #050505 !important;
+}
+
+p {
+  font-family: "Lobster Two", sans-serif;
+  font-size: 25px;
+  color: #fff;
+}
